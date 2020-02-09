@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  main:
+    build: .
+    labels:
+      - "traefik.http.routers.portfolio.rule=Host(`portfolio.lipsumar.io`)"
+      - "traefik.http.routers.portfolio.tls.certresolver=le"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+
+networks:
+  default:
+    external:
+      name: traefik-external
