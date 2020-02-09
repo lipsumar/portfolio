@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch-script</title>
+  <link rel="stylesheet" href="../../style/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="project-title">Fetch-script</h1>
+    <div class="project-links">
+      <!-- <a href="https://fetch-script.nodejs.easyfairs.cloud/#/">View app</a> -->
+      <a href="https://github.com/lipsumar/fetch-script" target="_blank">GitHub</a>
+    </div>
+
+    <p class="hero-text">
+      Fetch script is a toy language built on top of Javascript, specifically designed to fetch API resources.<br>
+      The primary goal of the language to be succinct yet powerful. <br>
+      The front-end app aims to bring an experience close to python notebooks: on the left are the code sections, that can be executed independently from each other. 
+      Results "echoed" from the scripts are shown under each section, while all variables are always accessible in the right-side column.
+    </p>
+
+    <img src="./main.png" class="project-hero">
+
+    <pre>
+$options.apis.sample.baseURL = "http://jsonplaceholder.typicode.com"
+
+users = /sample/users
+all = /sample/users/{users[*].id}
+  [posts] = /sample/posts/?userId={@.id}
+  [first_post_title] = @.posts[0].title
+</pre>
+  </div>
+
+
+
+</body>
+
+</html>

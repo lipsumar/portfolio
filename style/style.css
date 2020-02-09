@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+
+/* ----------------- reset tags  */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+blockquote {
+  padding: 1rem;
+  border-left: 3px solid #333;
+}
+
+/* ----------------- utilities */
+.container {
+  width: 1200px;
+  margin: 2rem auto;
+}
+
+/* ----------------- components */
+.page-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.project-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.project-links {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-text{
+  padding: 1em 1.3em;
+  background-color: aliceblue;
+  font-size:1.2em;
+  line-height: 1.6;
+}
+
+.project-hero {
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.project-links a {
+  margin-left: 1rem;
+}
+
+.project-links a:first-child {
+  margin-left: 0
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  row-gap: 5rem;
+}
+
+.year {
+  text-align: justify;
+  font-size: 170px;
+  font-weight: 900;
+  overflow: hidden;
+  color: #ccc;
+  grid-column-start: 1;
+}
+
+.project {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.project__body {
+  padding: 0.7rem 1rem;
+  display: flex;
+}
+
+.project__title {
+  font-weight: 300;
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  text-align: right;
+}
