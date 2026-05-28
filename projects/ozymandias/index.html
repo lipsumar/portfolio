@@ -1,39 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ozymandias — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ozymandias</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
+      <img src="./main.png" alt="Ozymandias" class="w-full" />
 
-  <div class="container">
-    <h1 class="project-title">Ozymandias</h1>
-    <div class="project-links">
-      <a href="http://www.optimum-park.com/" target="_blank">OPTIMUM PARK™</a>
-      <a href="https://github.com/lipsumar/ozymandias" target="_blank">GitHub</a>
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Ozymandias
+          <span class="text-gray-300 text-2xl sm:text-3xl">2017</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="http://www.optimum-park.com/" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">OPTIMUM PARK™ ↗</a>
+<a href="https://github.com/lipsumar/ozymandias" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>OPTIMUM PARK™ was an immersive performance piece — part art installation, part controlled chaos — presented in Belgium and at the Palais de Tokyo in Paris. It brought together poetry, dance, song, noise music, digital art, and destruction, staging them together for ~50 participants at a time.</p>
+<p>How it worked: participants arrived and were assigned a number — their identity for the duration of the experience. An automated voice called numbers and directed &quot;subjects&quot; to stations scattered through the space. Some stations had computers. Others had people. The tasks spanned a wide range: write poetry, follow a stranger, paint books black, sing, play noise music, shoot a paintball gun, throw glass bottles at a smoke-filled void, destroy a car with a baseball bat. The experience escalated through three levels of intensity, with a leaderboard and elimination for non-compliance.</p>
+<p>I was responsible for all the software. The entire show ran automatically — timing, lighting, music, the voice, the big screen, 20 networked terminals, tablets for the station operators, fog machine, lasers. Ozymandias was the task engine at the center of it: a Node.js library managing subjects, stations, levels, and task sequencing across a live session. It also includes a simulation module so the full flow could be tested without requiring 50 people.</p>
+
+        </div>
+      </div>
     </div>
-
-    <p class="hero-text">
-        Ozymandias is a nodeJS library to organize tasks among a group of people.<br>
-        This is the core of the <a href="http://www.optimum-park.com/">OPTIMUM PARK™</a> artwork.<br>
-        Out of the box, this allows you to configure terminals, stations, levels and tasks, register subjects and start a session. A module to simulate the actions of agents and subjects is also provided.
-    </p>
-
-    <img src="./main.jpg" class="project-hero">
-
-    <blockquote>
-      My name is Ozymandias, King of Kings;<br>
-      Look on my Works, ye Mighty, and despair!
-    </blockquote>
-  </div>
-
-
-
-</body>
-
+  </body>
 </html>

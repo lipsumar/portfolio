@@ -1,12 +1,22 @@
 {
+  "type": "module",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist"
+    "generate": "node scripts/generate.js",
+    "dev": "node scripts/generate.js && concurrently \"node scripts/generate.js --watch\" \"parcel index.html\"",
+    "build": "node scripts/generate.js && parcel build index.html --dist-dir dist",
+    "thumbs": "sh scripts/thumbs.sh",
+    "jpg2png": "sh scripts/jpg2png.sh",
+    "img-optimize": "pngquant --force --ext .png projects/**/*.png"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "concurrently": "^9.2.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.4",
     "parcel": "^2.16.4",
     "postcss": "^8.5.15",
     "tailwindcss": "^4.3.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

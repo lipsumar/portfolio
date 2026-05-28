@@ -1,29 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conus Textile — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Conus Textile</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
-  <div class="container">
-    <h1 class="project-title">Conus Textile</h1>
-    <div class="project-links">
-      <a href="http://lipsumarium.com/lab/ConusTextileGeneratorMulti/" target="_blank" class="project__link">View app</a>
+      <img src="./main.png" alt="Conus Textile" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Conus Textile
+          <span class="text-gray-300 text-2xl sm:text-3xl">2015</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="http://lipsumarium.com/lab/ConusTextileGeneratorMulti/" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">View app ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>In the context of an art project, we needed a way to explore 1D cellular automata and later export them for printing and weaving. Conus Textile renders a rule for an unlimited amount of states (going past the usual 2 states) and allows exporting and importing settings as files.</p>
+
+        </div>
+      </div>
     </div>
-    
-    <p class="hero-text">
-      In the context of an art project, we needed a way to explore 1D cellular automata and later export them for printing and weaving.<br>
-      The Conus Textile software allows to render a rule for an unlimited amount of states (going past the usual 2 states). The app allows to export/import settings as files.
-    </p>
-    
-    <img src="./main.png">
-  </div>
-
-</body>
-
+  </body>
 </html>

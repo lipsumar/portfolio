@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automotron — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
+
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
+
+      <img src="./main.png" alt="Automotron" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Automotron
+          <span class="text-gray-300 text-2xl sm:text-3xl">2020</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://github.com/lipsumar/automotron-v2" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>Before LLMs, generating text required real effort. I&#39;d been making generative art projects — poems, joke-telling bots and twitter bots — through increasingly painful scripts. Each project meant hand-coding probability tables, word lists, branching logic. It worked, barely, and the results were charming in a lo-fi way. But the scripts were brittle and impossible to share with anyone who couldn&#39;t read code.</p>
+<p>A conversation with Cécile Lefèvre, who tought French, gave me a new idea: she described something very similar in the context of learning language, where students could understand the relation of words through visual coding. What if building a generative text piece felt more like drawing a diagram?</p>
+<p>Automotron is a node graph editor where each node produces a word or piece of text, and you connect them to form sentences. The hard part was grammar: unlike English, French adjectives have to agree in gender and number with the nouns they modify. So Automotron includes a way to declare agreement rules — a node can adapt its output depending on what it&#39;s connected to.</p>
+<p>The project became mostly irrelevant once LLMs arrived. But I still think the visual, explicit approach had something going for it: you could see exactly how the text was built, and the results were fully deterministic. No hallucinations.</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

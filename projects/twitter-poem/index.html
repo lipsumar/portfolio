@@ -1,32 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter poem — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Twitter poem</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
-  <div class="container">
-    <h1 class="project-title">Twitter poem</h1>
-    <div class="project-links">
-      <a href="https://twitter-poem.herokuapp.com/" target="_blank" class="project__link">View app</a>
-      <a href="https://blog.lipsumarium.com/twitter-poem/" target="_blank" class="project__link">Blog post</a>
-      <a href="https://github.com/lipsumar/twitter-poem" target="_blank" class="project__link">GitHub</a>
+      <img src="./main.png" alt="Twitter poem" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Twitter poem
+          <span class="text-gray-300 text-2xl sm:text-3xl">2018</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://blog.lipsumarium.com/twitter-poem/" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">Blog post ↗</a>
+<a href="https://github.com/lipsumar/twitter-poem" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>Fascinated by the output of the Twitter random API (now defunct), I tried a way to surface some words from it. The result is &quot;Twitter Poem&quot;, an endless poem based on the most tweeted words. In order to keep the words relevant, they&#39;re filtered by a custom made dictionary — also made using Twitter data.</p>
+
+        </div>
+      </div>
     </div>
-
-    <p class="hero-text">
-      Fascinated by the output of the Twitter random API, I tried a way to surface some words from it.<br>
-      The result is "Twitter Poem", an endless poem based on the most tweeted words. In order to keep the words relevant, they're filtered by a custom made dictionary - also made using Twitter data.
-    </p>
-
-    <img src="./main.png" class="project-hero">
-
-  </div>
-
-</body>
-
+  </body>
 </html>

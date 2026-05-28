@@ -1,30 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter writes Hamlet — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Twitter writes Hamlet</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
-  <div class="container">
-    <h1 class="project-title">Twitter writes Hamlet</h1>
-    <div class="project-links">
-      <a href="http://twitter-writes-hamlet.com/" target="_blank" class="project__link">View app</a>
-      <a href="https://blog.lipsumarium.com/twitter-writes-hamlet/" target="_blank" class="project__link">Blog post</a>
-      <a href="https://github.com/lipsumar/twitter-writes-hamlet" target="_blank" class="project__link">GitHub</a>
+      <img src="./main.png" alt="Twitter writes Hamlet" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Twitter writes Hamlet
+          <span class="text-gray-300 text-2xl sm:text-3xl">2016</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://blog.lipsumarium.com/twitter-writes-hamlet/" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">Blog post ↗</a>
+<a href="https://github.com/lipsumar/twitter-writes-hamlet" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>The infinite monkey theorem says that 100 monkeys randomly hitting keys on a typewriter will eventually type any text — Shakespeare included. This property of randomness has always fascinated me, and the internet has no shortage of monkeys.</p>
+<p>The idea: somewhere across all the tweets ever posted, the complete text of Hamlet exists — word by word, scattered across millions of strangers&#39; thoughts. <em>Twitter Writes Hamlet</em> makes that tangible. It watches Twitter in real time, waiting for someone to tweet each next word of the play. When it finds one, it captures it, linking back to the original tweet, showing that this word came from a real person, for their own unrelated reason.</p>
+<p>It was a slow project by design. Hamlet is about 30,000 words long. Some words took minutes; others, days.</p>
+<p>Sadly, it had to be shut down when the Twitter API went paid in 2023. The play was left unfinished — which, in its own way, feels right.</p>
+
+        </div>
+      </div>
     </div>
-
-    <p class="hero-text">
-      In this Twitter experiment, I'm collecting words from Twitter until it forms the complete text of Hamlet.
-    </p>
-
-    <img src="./main.png" class="project-hero">
-  </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Bingo — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
+
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
+
+      <img src="./main.png" alt="AI Bingo" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          AI Bingo
+          <span class="text-gray-300 text-2xl sm:text-3xl">2023</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://github.com/lipsumar/ai-bingo" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a>
+<a href="https://ai-bingo.lipsumar.io/" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">View app ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>In 2023, as generative AI was taking off, everyone had opinions about which model was best — and I read a lot of beliefs that &quot;model X always does Y.&quot; I wondered how well people could actually tell them apart. So I built AI Bingo: players are shown 3 images per round across 10 rounds, and must match each image to its generator — Midjourney, DALL·E, or Stable Diffusion.</p>
+<p>The game collected <strong>6,414 plays</strong>. The results were more interesting than I expected:</p>
+<ul>
+<li><strong>Mean score: 46/100</strong> — barely above random chance (33). This is not an easy game!</li>
+<li><strong>Midjourney</strong> was by far the most recognizable (avg 5.4/10 correct, 7.1% perfect), unsurprising given its distinctive style.</li>
+<li><strong>DALL·E and Stable Diffusion</strong> were nearly indistinguishable from each other (4.0 and 4.2/10).</li>
+<li>Midjourney&#39;s score distribution is notably bimodal — players either identified it well or not at all, with little middle ground.</li>
+</ul>
+<p>The game got traction on the Midjourney subreddit, which likely skewed the sample toward users already familiar with that model&#39;s aesthetic. This is not a proper scientific experiment — but the data holds up as a fun snapshot of how recognizable these early models actually were.</p>
+<p><img src="analysis.full.png" alt="AI Bingo game stats — score distributions for all 6,414 games"></p>
+<p><em>(Collected over an unknown time window — I forgot I was tracking data and, inexplicably, didn&#39;t add timestamps to the records.)</em></p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

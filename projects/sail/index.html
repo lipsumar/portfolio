@@ -1,37 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sail — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sail</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
-  <div class="container">
-    <h1 class="project-title">Sail</h1>
-    <div class="project-links">
-      <a href="https://github.com/lipsumar/sail" target="_blank" class="project__link">GitHub</a>
+      <img src="./main.png" alt="Sail" class="w-full" />
+
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Sail
+          <span class="text-gray-300 text-2xl sm:text-3xl">2017</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://github.com/lipsumar/sail" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>A database browser. Sail allows browsing the contents of a MySQL database via SQL queries, or by right-clicking values to create joins. The primary focus is keeping all query results on page (unlike PHPMyAdmin) so coming back to a previous result is fast and convenient. It also provides a way to bundle multiple queries together as a &quot;board&quot;, which can display results as tables or more visual formats like scatter plots.</p>
+<h2>Example board</h2>
+<p><img src="./example-board.png" alt="Example board"></p>
+<h2>Example: Plot</h2>
+<p><img src="./plot.png" alt="Plot"></p>
+
+        </div>
+      </div>
     </div>
-
-    <p class="hero-text">
-      Sail is a database browser. It allows to browse the contents of a MySQL database via SQL queries, or by right-clickng values to create "joins".<br>
-      The primary focus of Sail is to keep all query results on page (unlike PHPMyAdmin) so coming back to a previous is fast and convenient.<br>
-      Additionally, it provides a way to bundle multiple queries together in the form of a "board". Boards can display results as classical tables or more visual ways like scatter plots.
-    </p>
-
-    <img src="./main.png" class="project-hero">
-
-    <h2>Example board</h2>
-    <img src="./example-board.png" alt="">
-
-    <br><br>
-    <h2>Example: Plot</h2>
-    <img src="./plot.png" alt="">
-  </div>
-
-</body>
-
+  </body>
 </html>

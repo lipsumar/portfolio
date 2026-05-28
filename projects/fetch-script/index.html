@@ -1,44 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch-script — Emmanuel Pire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fetch-script</title>
-  <link rel="stylesheet" href="../../style/style.css">
-</head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <nav class="py-6">
+        <a
+          href="../../index.html"
+          class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200"
+          >← Portfolio</a
+        >
+      </nav>
 
-<body>
+      <img src="./main.png" alt="Fetch-script" class="w-full" />
 
-  <div class="container">
-    <h1 class="project-title">Fetch-script</h1>
-    <div class="project-links">
-      <!-- <a href="https://fetch-script.nodejs.easyfairs.cloud/#/">View app</a> -->
-      <a href="https://github.com/lipsumar/fetch-script" target="_blank">GitHub</a>
-    </div>
-
-    <p class="hero-text">
-      Fetch script is a toy language built on top of Javascript, specifically designed to fetch API resources.<br>
-      The primary goal of the language to be succinct yet powerful. <br>
-      The front-end app aims to bring an experience close to python notebooks: on the left are the code sections, that can be executed independently from each other. 
-      Results "echoed" from the scripts are shown under each section, while all variables are always accessible in the right-side column.
-    </p>
-
-    <img src="./main.png" class="project-hero">
-
-    <pre>
-$options.apis.sample.baseURL = "http://jsonplaceholder.typicode.com"
+      <div class="py-10 sm:py-14">
+        <h1 class="text-3xl sm:text-4xl font-light text-gray-900 mb-4">
+          Fetch-script
+          <span class="text-gray-300 text-2xl sm:text-3xl">2018</span>
+        </h1>
+        <div class="flex gap-6 mb-8"><a href="https://github.com/lipsumar/fetch-script" target="_blank" class="text-xs font-medium tracking-[0.2em] uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">GitHub ↗</a></div>
+        <div class="prose prose-gray max-w-none">
+          <p>A toy language built on top of Javascript, specifically designed to fetch API resources. The primary goal is to be succinct yet powerful. The front-end app brings an experience close to python notebooks: on the left are code sections that can be executed independently, results are shown under each section, and all variables are always accessible in the right-side column.</p>
+<pre><code>$options.apis.sample.baseURL = &quot;http://jsonplaceholder.typicode.com&quot;
 
 users = /sample/users
 all = /sample/users/{users[*].id}
   [posts] = /sample/posts/?userId={@.id}
   [first_post_title] = @.posts[0].title
-</pre>
-  </div>
+</code></pre>
 
-
-
-</body>
-
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
