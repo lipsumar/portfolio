@@ -3,7 +3,7 @@
   "scripts": {
     "generate": "node scripts/generate.js",
     "dev": "node scripts/generate.js --dev && concurrently \"node scripts/generate.js --dev --watch\" \"parcel index.html\"",
-    "build": "node scripts/generate.js && parcel build index.html --dist-dir dist",
+    "build": "node scripts/generate.js && parcel build index.html projects/*/index.html --dist-dir dist",
     "thumbs": "sh scripts/thumbs.sh",
     "jpg2png": "sh scripts/jpg2png.sh",
     "img-optimize": "pngquant --force --ext .png projects/**/*.png"
