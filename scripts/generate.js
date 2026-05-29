@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 
 const watchMode = process.argv.includes('--watch');
+const devMode = process.argv.includes('--dev');
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -71,7 +72,7 @@ function generate() {
 
   const sectionsHtml = years.map(year => {
     const cards = byYear[year].map(p => `
-        <a href="projects/${p.slug}/index.html" class="group">
+        <a href="projects/${p.slug}${devMode ? '/index.html' : ''}" class="group">
           <div class="overflow-hidden mb-3 bg-gray-50">
             <img loading="lazy" src="projects/${p.slug}/thumb.png" alt="${p.title}" class="w-full object-cover aspect-video group-hover:scale-[1.03] transition-transform duration-500 ease-out">
           </div>
